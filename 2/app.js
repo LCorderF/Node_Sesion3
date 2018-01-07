@@ -38,6 +38,15 @@ app.get('/registro', (req, res) => {
 	res.render('./registro');
 });
 
+app.get('/usuarios', (req, res) => {
+	User.find(function(err, doc){
+		if(err) return err;
+		console.log(doc);
+		// res.render("usuarios", {})
+	});
+	res.render('./registro');
+});
+
 app.post('/registrar', (req, res) => {
 	// res.render('./registro');
 	// console.log(req.body);
