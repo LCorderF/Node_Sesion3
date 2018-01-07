@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<form action="/registrar" method="post">
+				<div>
+					<label for="nombre">Nombre</label>
+					<input type="text" class="form-control" name="nombre" id="nombre">
+				</div>
+				<div>
+					<label for="apellido">Apellido</label>
+					<input type="text" class="form-control" name="apellido" id="apellido">
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="text" class="form-control" name="email" id="email">
+				</div>
+				<div>
+					<label for="edad">Edad</label>
+					<input type="text" class="form-control" name="edad" id="edad">
+				</div>
+				<div>
+					<br>
+					<input type="submit" class="btn btn-primary" value="Enviar">
+				</div>
+			</form>
+		</div>		
+	</div>	
+</div>
+<script src="js/jquery-slim-min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
