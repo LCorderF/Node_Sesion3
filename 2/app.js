@@ -42,7 +42,7 @@ app.get('/usuarios', (req, res) => {
 	User.find(function(err, doc){
 		if(err) return err;
 		console.log(doc);
-		// res.render("usuarios", {})
+		res.render("./usuarios", {})
 	});
 	res.render('./registro');
 });
